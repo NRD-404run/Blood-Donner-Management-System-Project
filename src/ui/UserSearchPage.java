@@ -16,7 +16,7 @@ public class UserSearchPage extends JFrame {
 
     public UserSearchPage() {
         setTitle("Search Blood Donors");
-        setSize(700, 600);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());

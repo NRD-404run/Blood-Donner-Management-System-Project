@@ -16,7 +16,7 @@ public class LoginPage extends JFrame {
 
     public LoginPage() {
         setTitle("Blood Donor Management System - Login");
-        setSize(500, 400);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);

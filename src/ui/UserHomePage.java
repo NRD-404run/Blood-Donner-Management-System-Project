@@ -13,7 +13,7 @@ public class UserHomePage extends JFrame {
     public UserHomePage(User user) {
         this.currentUser = user;
         setTitle("Blood Donor Management - Home");
-        setSize(700, 500);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());

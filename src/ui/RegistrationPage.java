@@ -17,7 +17,7 @@ public class RegistrationPage extends JFrame {
 
     public RegistrationPage() {
         setTitle("Create New Account");
-        setSize(500, 600);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());

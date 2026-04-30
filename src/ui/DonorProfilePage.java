@@ -13,7 +13,7 @@ public class DonorProfilePage extends JFrame {
     public DonorProfilePage(Donor donor) {
         this.currentDonor = donor;
         setTitle("Donor Profile - " + donor.getName());
-        setSize(700, 600);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());

@@ -15,7 +15,7 @@ public class AdminPage extends JFrame {
 
     public AdminPage() {
         setTitle("Admin Dashboard - Blood Donor Management");
-        setSize(800, 600);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
