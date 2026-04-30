@@ -99,6 +99,11 @@ public class LoginPage extends JFrame {
         String password = new String(userPasswordField.getPassword());
         for (User user : DataStore.users) {
             if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
+                if (user.isBlocked()) {
+                    JOptionPane.showMessageDialog(this, "Your account has been blocked by the Administrator.", "Access Denied", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                DataStore.currentUser = user; // Track current session
                 if (user instanceof Donor) {
                     new DonorProfilePage((Donor)user).setVisible(true);
                 } else {
