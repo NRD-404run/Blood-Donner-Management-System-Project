@@ -31,15 +31,15 @@ public class AdminPage extends JFrame {
         JPanel topPanel = new JPanel(new BorderLayout());
         topPanel.setOpaque(false);
 
-        JLabel headerLabel = new JLabel("🛡️ System Administrator Control Panel", SwingConstants.CENTER);
+        JLabel headerLabel = new JLabel("\uD83D\uDEE1\uFE0F System Administrator Control Panel", SwingConstants.CENTER);
         headerLabel.setForeground(new Color(180, 0, 0));
-        headerLabel.setFont(new Font("SansSerif", Font.BOLD, 28));
+        headerLabel.setFont(new Font("Dialog", Font.BOLD, 28));
         topPanel.add(headerLabel, BorderLayout.CENTER);
 
         // Search Panel
         JPanel searchPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         searchPanel.setOpaque(false);
-        searchPanel.add(new JLabel("🔍 Find User (Email):"));
+        searchPanel.add(new JLabel("\uD83D\uDD0D Find User (Email):"));
         searchField = new JTextField(20);
         searchPanel.add(searchField);
         RoundedButton goBtn = new RoundedButton("Search", new Color(70, 70, 70), new Color(100, 100, 100));
@@ -50,22 +50,22 @@ public class AdminPage extends JFrame {
         card.add(topPanel, BorderLayout.NORTH);
 
         JTabbedPane tabs = new JTabbedPane();
-        tabs.setFont(new Font("SansSerif", Font.BOLD, 14));
+        tabs.setFont(new Font("Dialog", Font.BOLD, 14));
 
         // Donors Tab
         donorsContainer = new JPanel();
         donorsContainer.setLayout(new BoxLayout(donorsContainer, BoxLayout.Y_AXIS));
-        tabs.addTab("🩸 Manage Donors", new JScrollPane(donorsContainer));
+        tabs.addTab("\uD83E\uDE78 Manage Donors", new JScrollPane(donorsContainer));
 
         // General Users Tab
         usersContainer = new JPanel();
         usersContainer.setLayout(new BoxLayout(usersContainer, BoxLayout.Y_AXIS));
-        tabs.addTab("👥 Manage General Users", new JScrollPane(usersContainer));
+        tabs.addTab("\uD83D\uDC65 Manage General Users", new JScrollPane(usersContainer));
 
         // Blood Requests Tab
         requestsContainer = new JPanel();
         requestsContainer.setLayout(new BoxLayout(requestsContainer, BoxLayout.Y_AXIS));
-        tabs.addTab("📋 System Blood Requests", new JScrollPane(requestsContainer));
+        tabs.addTab("\uD83D\uDCCB System Blood Requests", new JScrollPane(requestsContainer));
 
         card.add(tabs, BorderLayout.CENTER);
 
