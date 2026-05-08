@@ -172,7 +172,7 @@ public class AdminPage extends JFrame {
         detailsBtn.addActionListener(e -> showUserDetails(user));
         blockBtn.addActionListener(e -> {
             user.setBlocked(!user.isBlocked());
-            DataStore.updateUserBlockStatus(user); // ✅ DB তে save করো
+            DataStore.updateUserBlockStatus(user); //DB তে save করো
             refreshAllData();
         });
 

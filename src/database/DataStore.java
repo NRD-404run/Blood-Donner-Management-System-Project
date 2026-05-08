@@ -12,7 +12,7 @@ public class DataStore {
 
     static final String URL = "jdbc:mysql://localhost:3306/blood_bank";
     static final String USER = "root";
-    static final String PASSWORD = "your_password_here";
+    static final String PASSWORD = "PassWord75217%";
 
     public static List<BloodRequest> bloodRequests = new ArrayList<>();
     public static List<Donor> donors = new ArrayList<>();
@@ -247,7 +247,7 @@ public class DataStore {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(URL, USER, PASSWORD);
             if (con != null) {
-                System.out.println("✅ Connected Successfully!");
+                System.out.println("Connected Successfully!");
                 con.close();
             }
         } catch (Exception e) {
